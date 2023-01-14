@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+*::selection {
+  user-select: none;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
+  background-color: hsl(218, 18%, 12%);
+  height: 100vh;
+}
+
+ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: rgb(208, 213, 220);
+  border-radius: 4px;
+  height: 30px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: rgb(51 65 85);
+  border-radius: 4px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
